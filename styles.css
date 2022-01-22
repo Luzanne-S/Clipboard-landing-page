@@ -12,10 +12,16 @@ h1,h4,h2{
     color: hsl(210, 10%, 33%);
 }
 
-header{
+main{
     background-image: url("images/bg-header-desktop.png");
     background-repeat: no-repeat;
+    height: 300px;
     background-size: cover;
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,0) 0%, rgba(249, 249, 249, 0.89) 100%);
+}
+
+header{
+   padding-top: 7%;
     text-align: center;
 }
 
@@ -29,26 +35,39 @@ header{
     width:42%;
     margin:auto;
 }
-.buttons{
+.buttons,.buttons2{
   margin-top: 3%;
   margin-bottom: 3%;
   
 }
+.buttons2{
+    margin-top:7%;
+    margin-bottom:20%;
+    
+}
 .ios-btn{
   padding:13px;
-  width:10rem;
+  width:14%;
   border-radius: 2rem;
   background-color: hsl(171, 66%, 44%);
   border:none;
   color:#fff;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.ios-btn:hover{
+    background-color: hsl(171, 66%, 50%);  
 }
 .mac-btn{
     padding:13px;
-    width:10rem;
+    width:14%;
     border-radius: 2rem;
     background-color: hsl(233, 100%, 69%);
     border:none;
     color:#fff;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.mac-btn:hover{
+    background-color: hsl(233, 81%, 71%);
 }
 
 .snippets{
@@ -89,18 +108,21 @@ header{
     margin:auto;
     column-gap: 40px;
 }
-.productivity_column{
+.productivity_column1,.productivity_column2,.productivity_column3{
     margin-top: 5%;
     text-align: center;
     width:30%;  
+}
+.productivity_column1{
+    width:28%;
 }
 .company-grid{
     display: flex;
     flex-direction: row;
     width:80%;
     margin:auto;
-    margin-top: 7%;
-    margin-bottom: 7%;
+    margin-top: 10%;
+    margin-bottom: 10%;
    
 }
 .grid{
@@ -115,6 +137,7 @@ footer{
   display:flex;
   flex-direction: column;
   align-items: center;
+  background-color: hsla(200, 9%, 81%, 0.151);
 }
 .footer-row{
     width: 80%;
@@ -127,7 +150,29 @@ footer{
   height: 300px;
   
 }
-@media (max-width: 375px) {
+@media (max-width: 380px) {
+    main{
+        max-width:100%;
+        background-image: url("images/bg-header-mobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background: -moz-linear-gradient(bottom, rgba(0,0,0,0) 0%, rgba(249, 249, 249, 0.89) 100%);
+    }
+   .header-p{
+       width:100%;
+   }
+   h1,h2,h4{
+       max-width: 90%;
+   }
+   .buttons{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+   .snippets{
+       margin:auto;
+       width:100%;
+   }
     .footer-column {
       width: 100%;
     }
