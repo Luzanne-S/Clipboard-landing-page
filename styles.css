@@ -35,7 +35,7 @@ header{
     width:42%;
     margin:auto;
 }
-.buttons,.buttons2{
+.buttons{
   margin-top: 3%;
   margin-bottom: 3%;
   
@@ -150,6 +150,7 @@ footer{
   height: 300px;
   
 }
+
 @media (max-width: 380px) {
     main{
         max-width:100%;
@@ -173,7 +174,37 @@ footer{
        margin:auto;
        width:100%;
    }
-    .footer-column {
+    .features{
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        margin:auto;
+    }
+    .features-options{
+        width:100%;
+        text-align: center;
+    }
+   .img-fluid{
+       width:300px;
+       height: 250px;
+       display: block;
+       margin:auto;
+   }
+   .access-p{
+      width:95%;
+   }
+   .device-img{
+    width:320px;
+    height: 200px;
+    display: block;
+    margin:auto; 
+   }
+   .productivity-grid,.company-grid{
+       display:flex;
+       flex-direction: column;
+       width:100%;
+   }
+    .footer-column,.productivity_column1,.productivity_column2,.productivity_column3 {
       width: 100%;
     }
   }
