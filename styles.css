@@ -6,13 +6,6 @@ body{
     font-family: 'Bai Jamjuree', sans-serif;
     font-size: 18px;
     color:hsl(201, 11%, 66%);
-}
-
-h1,h4,h2{
-    color: hsl(210, 10%, 33%);
-}
-
-main{
     background-image: url("images/bg-header-desktop.png");
     background-repeat: no-repeat;
     height: 300px;
@@ -20,9 +13,14 @@ main{
     background: -moz-linear-gradient(bottom, rgba(0,0,0,0) 0%, rgba(249, 249, 249, 0.89) 100%);
 }
 
+h1,h4,h2{
+    color: hsl(210, 10%, 33%);
+}
+
 header{
    padding-top: 7%;
     text-align: center;
+    margin-bottom: 10%;
 }
 
 .header-logo{
@@ -41,30 +39,29 @@ header{
   
 }
 .buttons2{
-    margin-top:7%;
-    margin-bottom:20%;
+    text-align: center;
+    margin-bottom:10%;
     
 }
-.ios-btn{
-  padding:13px;
+.ios-btn,.mac-btn{
+  padding:13px; 
+  border-radius: 2rem; 
   width:14%;
-  border-radius: 2rem;
-  background-color: hsl(171, 66%, 44%);
   border:none;
-  color:#fff;
+  color:rgb(240, 234, 234);
+  font-weight: 600;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.ios-btn{
+  margin-right: 1em;
+  background-color: hsl(171, 66%, 44%);
+
 }
 .ios-btn:hover{
     background-color: hsl(171, 66%, 50%);  
 }
 .mac-btn{
-    padding:13px;
-    width:14%;
-    border-radius: 2rem;
     background-color: hsl(233, 100%, 69%);
-    border:none;
-    color:#fff;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 .mac-btn:hover{
     background-color: hsl(233, 81%, 71%);
@@ -82,12 +79,19 @@ header{
 
 }
 .features-options{
-    width:30%;
-    padding-left: 5%;
+    width:32%;
+    padding-left: 6%;
     margin-top: 3%;
+    padding-bottom: 5%;
 }
-.desktop-img{
-    padding-left: -10%;
+.features-h4{
+    margin-top: 15%;
+}
+.feature-p{
+    padding-bottom: 10%;
+}
+.img-fluid{
+    margin-left: -2%;
 }
 .access{
     text-align: center;
@@ -105,7 +109,7 @@ header{
     display: flex;
     flex-direction: row;
     width:90%;
-    margin:auto;
+    margin-left:8%;
     column-gap: 40px;
 }
 .productivity_column1,.productivity_column2,.productivity_column3{
@@ -137,6 +141,7 @@ footer{
   display:flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 3%;
   background-color: hsla(200, 9%, 81%, 0.151);
 }
 .footer-row{
@@ -148,27 +153,56 @@ footer{
   width: 15%;
   padding: 10px;
   height: 300px;
+  line-height: 2.5;
   
+}
+.footer-column4{
+float:right;
+}
+
+.icons{
+    padding-left: 1rem;
+    padding-top:2em;
 }
 
 @media (max-width: 380px) {
-    main{
+    body{
         max-width:100%;
         background-image: url("images/bg-header-mobile.png");
         background-repeat: no-repeat;
         background-size: cover;
         background: -moz-linear-gradient(bottom, rgba(0,0,0,0) 0%, rgba(249, 249, 249, 0.89) 100%);
     }
-   .header-p{
-       width:100%;
+    .header-logo{
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+    header{
+        margin-bottom: 30%;
+    }
+   .header-p,.access-p,.snippet-p{
+       width:97%;
+       margin-bottom: 15%;
    }
-   h1,h2,h4{
+   h1{
+       max-width: 100%;
+   }
+   h2,h4{
        max-width: 90%;
+       margin:auto;
    }
-   .buttons{
+   .buttons,.buttons2{
        display: flex;
        flex-direction: column;
        align-items: center;
+       width:100%;
+   }
+   .ios-btn,.mac-btn{
+       width:90%;
+       padding:5%;
+       margin:auto;
+       margin-bottom: 5%;
+       font-size: medium;
    }
    .snippets{
        margin:auto;
@@ -181,7 +215,9 @@ footer{
         margin:auto;
     }
     .features-options{
-        width:100%;
+        margin-top: 15%;
+        margin-bottom: 20%;
+        width:98%;
         text-align: center;
     }
    .img-fluid{
@@ -190,9 +226,23 @@ footer{
        display: block;
        margin:auto;
    }
+   .access,.end-p{
+       margin-bottom: 20%;
+   }
    .access-p{
+       margin-top: 10%;
       width:95%;
    }
+   .productivity_column1,.productivity_column2,.productivity_column3{
+       margin-top: 10%;
+       margin-bottom: 8%;
+   } 
+ .productivity-h4{
+     margin-top: 8%;
+ }
+ h4{
+     font-size: x-large;
+ }
    .device-img{
     width:320px;
     height: 200px;
@@ -202,9 +252,30 @@ footer{
    .productivity-grid,.company-grid{
        display:flex;
        flex-direction: column;
+       margin:auto;
        width:100%;
    }
-    .footer-column,.productivity_column1,.productivity_column2,.productivity_column3 {
+   .buttons2{
+       margin-bottom: 35%;
+   }
+   footer,.grid{
+       width:100%;
+       text-align: center;
+       padding-top: 15%;
+       padding-bottom: 10%;
+   }
+   .grid{
+       padding-bottom: 1%;
+   }
+   .end-h2{
+       margin-top: 30%;
+   }
+   .footer-column,.footer-column4{
+       height:fit-content;
+       padding:0;
+   }
+  
+    .footer-column,.footer-column4,.productivity_column1,.productivity_column2,.productivity_column3 {
       width: 100%;
     }
   }
