@@ -24,13 +24,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](images/Clipboard-landing-page)
+![](images/Clipboard-landing-page.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Luzanne-S/Clipboard-landing-page)
-- Live Site URL: [Add live site URL here](https://luzanne-s.github.io/Clipboard-landing-page/)
+- Solution URL: (https://github.com/Luzanne-S/Clipboard-landing-page)
+- Live Site URL: (https://luzanne-s.github.io/Clipboard-landing-page/)
 
 
 ### Built with
@@ -39,13 +39,6 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 
-
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 
 ## Author
